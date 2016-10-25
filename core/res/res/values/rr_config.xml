@@ -1,4 +1,4 @@
-<!--
+0<!--
      Copyright (C) 2019 RR
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,5 +39,8 @@
     <!-- Older rotation sensors are not setting event.timestamp correctly. Setting to
          true will use SystemClock.elapsedRealtimeNanos() to set timestamp. -->
     <bool name="config_useSystemClockforRotationSensor">false</bool>
+
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">false</bool>
 
 </resources>
