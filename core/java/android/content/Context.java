@@ -4227,6 +4227,11 @@ public abstract class Context {
      * @see android.os.PocketManager
      */
     public static final String POCKET_SERVICE = "pocket";
+     /**
+     * Long screenshot
+     * @hide
+     */
+    public static final String LONGSCREENSHOT_SERVICE = "longshot";
 
     /**
      * Determine whether the given permission is allowed for a particular
