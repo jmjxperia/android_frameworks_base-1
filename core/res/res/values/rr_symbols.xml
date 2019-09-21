@@ -17,4 +17,8 @@
   <!-- Device keyhandlers -->
   <java-symbol type="array" name="config_deviceKeyHandlerLibs" />
   <java-symbol type="array" name="config_deviceKeyHandlerClasses" />
+
+  <!-- Device have FOD -->
+  <java-symbol type="bool" name="config_mHasFod" />
+
 </resources>

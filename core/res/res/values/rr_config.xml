@@ -21,4 +21,8 @@
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
     </string-array>
+
+    <!-- Device have FOD -->
+    <bool name="config_mHasFod">false</bool>
+
 </resources>
