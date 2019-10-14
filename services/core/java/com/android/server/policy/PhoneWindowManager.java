@@ -2198,18 +2198,9 @@ public class PhoneWindowManager implements WindowManagerPolicy {
 
         @Override
         public void run() {
-<<<<<<< HEAD
 	    if (Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.SCREEN_SHOT_SHORTCUT_SWITCH, 1) == 1) {
             if (!mPocketLockShowing){
-            mScreenshotHelper.takeScreenshot(mScreenshotType,
-                    mStatusBar != null && mStatusBar.isVisibleLw(),
-                    mNavigationBar != null && mNavigationBar.isVisibleLw(), mHandler);
-            }
-            } else {
-             Slog.d(TAG, "ScreenShot Shortcut Disabled");
-	        }
-=======
             boolean longshot;
             boolean inMultiWindow = mFocusedWindow != null ? mFocusedWindow.isInMultiWindowMode() : false;
             boolean dockMinimized = mWindowManagerInternal.isMinimizedDock();
@@ -2232,7 +2223,10 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             mScreenshotHelper.takeScreenshot(mScreenshotType,
                     mStatusBar != null && mStatusBar.isVisibleLw(),
                     mNavigationBar != null && mNavigationBar.isVisibleLw(), mHandler, longshot, screenshotBundle);
->>>>>>> 971c799d8eb... fwb: Port extended screenshot function from OOS (cleaned)
+            }
+            } else {
+             Slog.d(TAG, "ScreenShot Shortcut Disabled");
+	        }
         }
     }
 
